@@ -32,6 +32,13 @@ const PROGRESS_CIRCUMFERENCE = 2 * Math.PI * 19; // ≈ 119.38
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideKey, setSlideKey] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Small delay to ensure CSS is ready before triggering animations
+    const timer = setTimeout(() => setMounted(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
 
   const goToSlide = useCallback((index: number) => {
     setCurrentSlide(index);
@@ -50,36 +57,6 @@ export default function HeroSlider() {
 
   return (
     <section className="relative min-h-[600px] lg:min-h-[700px] overflow-hidden">
-      {/* Ken Burns keyframe + progress ring animation */}
-      <style jsx>{`
-        @keyframes kenburns {
-          from {
-            transform: scale(1);
-          }
-          to {
-            transform: scale(1.1);
-          }
-        }
-        @keyframes progressRing {
-          from {
-            stroke-dashoffset: ${PROGRESS_CIRCUMFERENCE};
-          }
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(24px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
-
       {/* Slide images */}
       {slides.map((slide, index) => (
         <div
@@ -89,14 +66,7 @@ export default function HeroSlider() {
           aria-hidden={index !== currentSlide}
         >
           <div
-            className="absolute inset-0"
-            style={
-              index === currentSlide
-                ? {
-                    animation: "kenburns 8s ease-out forwards",
-                  }
-                : undefined
-            }
+            className={`absolute inset-0 ${index === currentSlide ? "animate-kenburns" : ""}`}
           >
             <Image
               src={slide.image}
@@ -113,17 +83,18 @@ export default function HeroSlider() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/70 to-primary-900/40" />
 
-      {/* Text content */}
+      {/* Text content - always visible, animated on slide change */}
       <div className="relative z-10 container-custom flex items-center min-h-[600px] lg:min-h-[700px]">
         <div className="max-w-2xl py-24 lg:py-32">
           {/* Badge */}
           <div
             key={`badge-${slideKey}`}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm text-accent-400 mb-6"
-            style={{
-              animation: "fadeInUp 0.6s ease-out forwards",
-              opacity: 0,
-            }}
+            className={`inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm text-accent-400 mb-6 transition-all duration-600 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={slideKey > 0 ? {
+              animation: "slideUp 0.5s ease-out forwards",
+            } : undefined}
           >
             <Award size={16} />
             <span>DEKRA-zertifizierter Sachverständiger</span>
@@ -132,10 +103,14 @@ export default function HeroSlider() {
           {/* Heading */}
           <h1
             key={`heading-${slideKey}`}
-            className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
-            style={{
-              animation: "fadeInUp 0.6s 0.15s ease-out forwards",
+            className={`font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 transition-all duration-700 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={slideKey > 0 ? {
+              animation: "slideUp 0.5s 0.1s ease-out forwards",
               opacity: 0,
+            } : {
+              transitionDelay: "150ms",
             }}
           >
             {slides[currentSlide].heading}
@@ -144,10 +119,14 @@ export default function HeroSlider() {
           {/* Subtitle */}
           <p
             key={`subtitle-${slideKey}`}
-            className="text-lg md:text-xl text-primary-100 mb-8 max-w-xl"
-            style={{
-              animation: "fadeInUp 0.6s 0.3s ease-out forwards",
+            className={`text-lg md:text-xl text-primary-100 mb-8 max-w-xl transition-all duration-700 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={slideKey > 0 ? {
+              animation: "slideUp 0.5s 0.2s ease-out forwards",
               opacity: 0,
+            } : {
+              transitionDelay: "300ms",
             }}
           >
             {slides[currentSlide].subtitle}
@@ -156,10 +135,14 @@ export default function HeroSlider() {
           {/* CTA Buttons */}
           <div
             key={`cta-${slideKey}`}
-            className="flex flex-wrap gap-4"
-            style={{
-              animation: "fadeInUp 0.6s 0.45s ease-out forwards",
+            className={`flex flex-wrap gap-4 transition-all duration-700 ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={slideKey > 0 ? {
+              animation: "slideUp 0.5s 0.3s ease-out forwards",
               opacity: 0,
+            } : {
+              transitionDelay: "450ms",
             }}
           >
             <Link
@@ -223,9 +206,7 @@ export default function HeroSlider() {
                       strokeDasharray={PROGRESS_CIRCUMFERENCE}
                       strokeDashoffset={PROGRESS_CIRCUMFERENCE}
                       strokeLinecap="round"
-                      style={{
-                        animation: `progressRing ${SLIDE_DURATION}ms linear forwards`,
-                      }}
+                      className="animate-progress-ring"
                     />
                   </svg>
                   <span className="relative text-sm font-semibold text-white">

@@ -89,10 +89,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/logo/farthmann-logo.svg"
+              src="/Logo.png"
               alt="Farthmann Immobilien"
               width={scrolled ? 180 : 220}
-              height={scrolled ? 40 : 48}
+              height={scrolled ? 52 : 64}
               priority
               className="transition-all duration-500"
             />

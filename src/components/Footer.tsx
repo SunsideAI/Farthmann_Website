@@ -12,11 +12,11 @@ export default function Footer() {
           {/* Column 1: Company Info */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo/farthmann-logo-white.svg"
+              src="/Logo.png"
               alt="Farthmann Immobilien"
               width={220}
-              height={48}
-              className="mb-4"
+              height={64}
+              className="mb-4 brightness-0 invert"
             />
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">
               Ihr vertrauenswürdiger Partner für Immobilien in Ostwestfalen-Lippe.
