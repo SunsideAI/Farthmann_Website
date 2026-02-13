@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,13 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Column 1: Company Info */}
           <div className="lg:col-span-1">
-            <Image
-              src="/Logo.png"
-              alt="Farthmann Immobilien"
-              width={220}
-              height={64}
-              className="mb-4 brightness-0 invert"
-            />
+            <div className="mb-4">
+              <Logo variant="white" />
+            </div>
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">
               Ihr vertrauenswürdiger Partner für Immobilien in Ostwestfalen-Lippe.
               Seit über 30 Jahren – Makler, Gutachter, Partner.

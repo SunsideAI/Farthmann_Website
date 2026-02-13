@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X, Phone, Mail, ChevronDown, Award } from "lucide-react";
+import Logo from "./Logo";
 
 const navItems = [
   { label: "Startseite", href: "/" },
@@ -87,15 +87,8 @@ export default function Header() {
       >
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
-            <Image
-              src="/Logo.png"
-              alt="Farthmann Immobilien"
-              width={scrolled ? 180 : 220}
-              height={scrolled ? 52 : 64}
-              priority
-              className="transition-all duration-500"
-            />
+          <Link href="/" className="flex-shrink-0" aria-label="Farthmann Immobilien – Startseite">
+            <Logo size={scrolled ? "sm" : "default"} />
           </Link>
 
           {/* Desktop Navigation */}
