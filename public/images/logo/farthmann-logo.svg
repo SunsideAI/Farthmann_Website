@@ -1,11 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50">
-  <!-- Icon: Rounded square with stylized F -->
-  <rect x="0" y="3" width="44" height="44" rx="8" fill="#221D80"/>
-  <rect x="12" y="13" width="20" height="3" rx="1.5" fill="white"/>
-  <rect x="12" y="21" width="15" height="3" rx="1.5" fill="#E37D22"/>
-  <rect x="12" y="29" width="3" height="8" rx="1.5" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70">
+  <defs>
+    <linearGradient id="banner" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E3A7B"/>
+      <stop offset="100%" stop-color="#4A8AC9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- House Icon -->
+  <g transform="translate(2, 2)">
+    <!-- House body -->
+    <rect x="16" y="32" width="34" height="24" rx="1" fill="#1B2D6B"/>
+    <!-- Roof -->
+    <polygon points="33,6 6,32 60,32" fill="#1B2D6B"/>
+    <!-- Chimney -->
+    <rect x="17" y="11" width="7" height="16" fill="#1B2D6B"/>
+    <!-- Window left -->
+    <rect x="22" y="37" width="9" height="8" rx="1" fill="#4A8AC9" opacity="0.5"/>
+    <!-- Window right -->
+    <rect x="35" y="37" width="9" height="8" rx="1" fill="#4A8AC9" opacity="0.5"/>
+    <!-- Door -->
+    <rect x="29" y="45" width="8" height="11" rx="1" fill="#4A8AC9" opacity="0.4"/>
+    <!-- Swoosh curve under house -->
+    <path d="M2,62 Q20,52 33,55 Q46,58 65,50" stroke="#1B2D6B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  </g>
+
   <!-- Text: FARTHMANN -->
-  <text x="56" y="24" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#221D80" letter-spacing="2.5">FARTHMANN</text>
-  <!-- Text: IMMOBILIEN -->
-  <text x="56" y="42" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="500" fill="#E37D22" letter-spacing="4">IMMOBILIEN</text>
+  <text x="80" y="34" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" fill="#1B2D6B" letter-spacing="2">FARTHMANN</text>
+
+  <!-- Blue gradient banner -->
+  <rect x="80" y="42" width="218" height="24" rx="3" fill="url(#banner)"/>
+  <!-- Text: IMMOBILIEN on banner -->
+  <text x="90" y="59" font-family="'Montserrat', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="white" letter-spacing="6">IMMOBILIEN</text>
 </svg>

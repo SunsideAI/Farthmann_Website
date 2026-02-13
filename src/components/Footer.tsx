@@ -14,8 +14,8 @@ export default function Footer() {
             <Image
               src="/images/logo/farthmann-logo-white.svg"
               alt="Farthmann Immobilien"
-              width={200}
-              height={40}
+              width={220}
+              height={48}
               className="mb-4"
             />
             <p className="text-neutral-400 text-sm leading-relaxed mb-6">

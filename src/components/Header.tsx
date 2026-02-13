@@ -68,8 +68,8 @@ export default function Header() {
             <Image
               src="/images/logo/farthmann-logo.svg"
               alt="Farthmann Immobilien"
-              width={200}
-              height={40}
+              width={220}
+              height={48}
               priority
             />
           </Link>

@@ -1,6 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
-  <rect x="0" y="0" width="44" height="44" rx="8" fill="#221D80"/>
-  <rect x="12" y="10" width="20" height="3.5" rx="1.75" fill="white"/>
-  <rect x="12" y="19" width="15" height="3.5" rx="1.75" fill="#E37D22"/>
-  <rect x="12" y="28" width="3.5" height="9" rx="1.75" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#1B2D6B"/>
+
+  <!-- House Icon (white, centered) -->
+  <g transform="translate(10, 6)">
+    <!-- House body -->
+    <rect x="10" y="26" width="24" height="18" rx="1" fill="white"/>
+    <!-- Roof -->
+    <polygon points="22,4 2,26 42,26" fill="white"/>
+    <!-- Chimney -->
+    <rect x="11" y="10" width="5" height="12" fill="white"/>
+    <!-- Window left -->
+    <rect x="14" y="30" width="7" height="6" rx="1" fill="#1B2D6B" opacity="0.3"/>
+    <!-- Window right -->
+    <rect x="24" y="30" width="7" height="6" rx="1" fill="#1B2D6B" opacity="0.3"/>
+    <!-- Door -->
+    <rect x="18" y="36" width="7" height="8" rx="1" fill="#1B2D6B" opacity="0.25"/>
+    <!-- Swoosh -->
+    <path d="M0,50 Q14,40 22,43 Q30,46 44,38" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
 </svg>
