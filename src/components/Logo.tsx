@@ -6,77 +6,52 @@ interface LogoProps {
 export default function Logo({ variant = "dark", size = "default" }: LogoProps) {
   const isDark = variant === "dark";
   const primary = isDark ? "#2d488d" : "#ffffff";
-  const accent = isDark ? "#4568ab" : "rgba(255,255,255,0.85)";
-  const taglineColor = isDark ? "#8ea8d5" : "rgba(255,255,255,0.55)";
+  const subtle = isDark ? "#6b84b8" : "rgba(255,255,255,0.5)";
 
-  const iconSize = size === "sm" ? "h-9 w-9" : "h-11 w-11";
+  const iconSize = size === "sm" ? "h-7 w-7" : "h-9 w-9";
 
   return (
-    <div className="flex items-center gap-3">
-      {/* House Icon */}
+    <div className="flex items-center gap-2.5">
+      {/* Minimal house — just roof outline */}
       <svg
-        viewBox="0 0 48 48"
+        viewBox="0 0 32 32"
         className={`${iconSize} flex-shrink-0`}
+        fill="none"
         aria-hidden="true"
       >
-        {/* Roof */}
         <path
-          d="M24 4L46 22H38V44H10V22H2L24 4Z"
-          fill={primary}
+          d="M3 17L16 4L29 17"
+          stroke={primary}
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
-        {/* Door with rounded top */}
         <path
-          d="M20 44V33C20 30.79 21.79 29 24 29C26.21 29 28 30.79 28 33V44H20Z"
-          fill={isDark ? "#ffffff" : "#2d488d"}
-          opacity={isDark ? 0.92 : 0.3}
-        />
-        {/* Left window */}
-        <rect
-          x="13"
-          y="24"
-          width="6"
-          height="6"
-          rx="1"
-          fill={isDark ? "#ffffff" : "#2d488d"}
-          opacity={isDark ? 0.85 : 0.25}
-        />
-        {/* Right window */}
-        <rect
-          x="29"
-          y="24"
-          width="6"
-          height="6"
-          rx="1"
-          fill={isDark ? "#ffffff" : "#2d488d"}
-          opacity={isDark ? 0.85 : 0.25}
+          d="M7 14V28H25V14"
+          stroke={primary}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
 
       {/* Text */}
       <div className="flex flex-col">
         <span
-          className={`font-heading font-bold tracking-[0.08em] leading-none ${
-            size === "sm" ? "text-lg" : "text-xl"
+          className={`font-heading font-bold tracking-[0.06em] leading-none ${
+            size === "sm" ? "text-base" : "text-lg"
           }`}
           style={{ color: primary }}
         >
           FARTHMANN
         </span>
         <span
-          className={`font-heading font-semibold tracking-[0.28em] leading-none mt-0.5 ${
-            size === "sm" ? "text-[0.55rem]" : "text-[0.65rem]"
+          className={`font-heading font-medium tracking-[0.22em] leading-none mt-0.5 ${
+            size === "sm" ? "text-[0.5rem]" : "text-[0.6rem]"
           }`}
-          style={{ color: accent }}
+          style={{ color: subtle }}
         >
           IMMOBILIEN
-        </span>
-        <span
-          className={`italic leading-none mt-1.5 ${
-            size === "sm" ? "text-[0.5rem]" : "text-[0.58rem]"
-          }`}
-          style={{ color: taglineColor }}
-        >
-          damit Menschen sich wohlfühlen
         </span>
       </div>
     </div>
