@@ -93,7 +93,7 @@ export default function VerkaufVermietungPage() {
             <span>/</span>
             <span className="text-white">Verkauf &amp; Vermietung</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Verkauf &amp; Vermietung
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl leading-relaxed">
@@ -126,7 +126,7 @@ export default function VerkaufVermietungPage() {
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-white font-bold text-lg font-serif">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-white font-bold text-lg font-heading">
                       {reason.number}
                     </span>
                   </div>
@@ -134,7 +134,7 @@ export default function VerkaufVermietungPage() {
                     <div className="w-12 h-12 rounded-xl bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
                       {iconMap[reason.icon]}
                     </div>
-                    <h3 className="font-serif text-lg font-semibold text-neutral-900 mb-2">
+                    <h3 className="font-heading text-lg font-semibold text-neutral-900 mb-2">
                       {reason.title}
                     </h3>
                     <p className="text-neutral-500 text-sm leading-relaxed">
@@ -166,7 +166,7 @@ export default function VerkaufVermietungPage() {
                 <div className="w-16 h-16 rounded-xl bg-primary-50 flex items-center justify-center mb-6">
                   {config.icon}
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-neutral-900 mb-4">
+                <h3 className="font-heading text-xl font-semibold text-neutral-900 mb-4">
                   {config.title}
                 </h3>
                 <ul className="space-y-3">
@@ -208,10 +208,10 @@ export default function VerkaufVermietungPage() {
               <div className="grid grid-cols-6 gap-4">
                 {processSteps.map((step) => (
                   <div key={step.step} className="relative text-center">
-                    <div className="relative z-10 w-16 h-16 mx-auto rounded-full bg-primary-800 text-white flex items-center justify-center font-bold text-xl font-serif shadow-lg">
+                    <div className="relative z-10 w-16 h-16 mx-auto rounded-full bg-primary-800 text-white flex items-center justify-center font-bold text-xl font-heading shadow-lg">
                       {step.step}
                     </div>
-                    <h3 className="font-serif text-base font-semibold text-neutral-900 mt-4 mb-2">
+                    <h3 className="font-heading text-base font-semibold text-neutral-900 mt-4 mb-2">
                       {step.title}
                     </h3>
                     <p className="text-neutral-500 text-sm leading-relaxed">
@@ -231,11 +231,11 @@ export default function VerkaufVermietungPage() {
               <div className="space-y-8">
                 {processSteps.map((step) => (
                   <div key={step.step} className="relative flex items-start gap-6">
-                    <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full bg-primary-800 text-white flex items-center justify-center font-bold text-xl font-serif shadow-lg">
+                    <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full bg-primary-800 text-white flex items-center justify-center font-bold text-xl font-heading shadow-lg">
                       {step.step}
                     </div>
                     <div className="pt-3">
-                      <h3 className="font-serif text-lg font-semibold text-neutral-900 mb-1">
+                      <h3 className="font-heading text-lg font-semibold text-neutral-900 mb-1">
                         {step.title}
                       </h3>
                       <p className="text-neutral-500 text-sm leading-relaxed">
@@ -260,7 +260,7 @@ export default function VerkaufVermietungPage() {
       {/* CTA Banner */}
       <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800">
         <div className="container-custom text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Bereit f&uuml;r den n&auml;chsten Schritt?
           </h2>
           <p className="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">

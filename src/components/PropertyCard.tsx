@@ -33,7 +33,7 @@ export default function PropertyCard({ property }: { property: Property }) {
       {/* Content */}
       <div className="p-5">
         <Link href={`/immobilien/${property.id}`}>
-          <h3 className="font-serif text-lg font-semibold text-neutral-900 group-hover:text-primary-800 transition-colors line-clamp-1">
+          <h3 className="font-heading text-lg font-semibold text-neutral-900 group-hover:text-primary-800 transition-colors line-clamp-1">
             {property.title}
           </h3>
         </Link>

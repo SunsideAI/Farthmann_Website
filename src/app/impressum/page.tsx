@@ -18,7 +18,7 @@ export default function ImpressumPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Impressum</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Impressum
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function ImpressumPage() {
           <div className="prose prose-neutral max-w-none space-y-10">
             {/* Angaben */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Angaben gemäß § 5 TMG
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -43,7 +43,7 @@ export default function ImpressumPage() {
 
             {/* Kontakt */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Kontakt
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -61,7 +61,7 @@ export default function ImpressumPage() {
 
             {/* Umsatzsteuer-ID */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Umsatzsteuer-ID
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -74,7 +74,7 @@ export default function ImpressumPage() {
 
             {/* Berufsbezeichnung */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Berufsbezeichnung und berufsrechtliche Regelungen
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -89,7 +89,7 @@ export default function ImpressumPage() {
 
             {/* Aufsichtsbehörde */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Aufsichtsbehörde
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -103,7 +103,7 @@ export default function ImpressumPage() {
 
             {/* Berufshaftpflichtversicherung */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Berufshaftpflichtversicherung
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -115,7 +115,7 @@ export default function ImpressumPage() {
 
             {/* Verantwortlich */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -128,11 +128,11 @@ export default function ImpressumPage() {
 
             {/* Haftungsausschluss */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Haftungsausschluss (Disclaimer)
               </h2>
 
-              <h3 className="font-serif text-lg font-semibold text-neutral-800 mb-2 mt-6">
+              <h3 className="font-heading text-lg font-semibold text-neutral-800 mb-2 mt-6">
                 Haftung für Inhalte
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -147,7 +147,7 @@ export default function ImpressumPage() {
                 auf eine rechtswidrige Tätigkeit hinweisen.
               </p>
 
-              <h3 className="font-serif text-lg font-semibold text-neutral-800 mb-2 mt-6">
+              <h3 className="font-heading text-lg font-semibold text-neutral-800 mb-2 mt-6">
                 Haftung für Links
               </h3>
               <p className="text-neutral-700 leading-relaxed">
@@ -168,7 +168,7 @@ export default function ImpressumPage() {
 
             {/* Urheberrecht */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Urheberrecht
               </h2>
               <p className="text-neutral-700 leading-relaxed">

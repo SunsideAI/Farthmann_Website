@@ -67,7 +67,7 @@ export default function KontaktPage() {
             <span>/</span>
             <span className="text-white">Kontakt</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Kontakt
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl leading-relaxed">
@@ -83,7 +83,7 @@ export default function KontaktPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Contact Form */}
             <div>
-              <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-6">
+              <h2 className="font-heading text-2xl font-bold text-neutral-900 mb-6">
                 Nachricht senden
               </h2>
 
@@ -92,7 +92,7 @@ export default function KontaktPage() {
                   <div className="w-16 h-16 mx-auto rounded-full bg-success/10 flex items-center justify-center mb-4">
                     <CheckCircle size={32} className="text-success" />
                   </div>
-                  <h3 className="font-serif text-xl font-semibold text-neutral-900 mb-2">
+                  <h3 className="font-heading text-xl font-semibold text-neutral-900 mb-2">
                     Nachricht gesendet!
                   </h3>
                   <p className="text-neutral-600 mb-6">
@@ -244,14 +244,14 @@ export default function KontaktPage() {
 
             {/* Right: Contact Information */}
             <div>
-              <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-6">
+              <h2 className="font-heading text-2xl font-bold text-neutral-900 mb-6">
                 Kontaktinformationen
               </h2>
 
               <div className="space-y-8">
                 {/* Büro Werther */}
                 <div className="card p-6">
-                  <h3 className="font-serif text-lg font-semibold text-neutral-900 mb-4">
+                  <h3 className="font-heading text-lg font-semibold text-neutral-900 mb-4">
                     B&uuml;ro Werther
                   </h3>
                   <div className="space-y-3 text-sm">
@@ -294,7 +294,7 @@ export default function KontaktPage() {
 
                 {/* Büro Borgholzhausen */}
                 <div className="card p-6">
-                  <h3 className="font-serif text-lg font-semibold text-neutral-900 mb-4">
+                  <h3 className="font-heading text-lg font-semibold text-neutral-900 mb-4">
                     B&uuml;ro Borgholzhausen
                   </h3>
                   <div className="space-y-3 text-sm">

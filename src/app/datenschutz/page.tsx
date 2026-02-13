@@ -18,7 +18,7 @@ export default function DatenschutzPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Datenschutz</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Datenschutzerklärung
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function DatenschutzPage() {
           <div className="prose prose-neutral max-w-none space-y-10">
             {/* 1. Verantwortliche Stelle */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 1. Verantwortliche Stelle
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -56,7 +56,7 @@ export default function DatenschutzPage() {
 
             {/* 2. Erhebung und Speicherung */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 2. Erhebung und Speicherung personenbezogener Daten
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -85,7 +85,7 @@ export default function DatenschutzPage() {
 
             {/* 3. Cookies */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 3. Nutzung von Cookies
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -106,7 +106,7 @@ export default function DatenschutzPage() {
 
             {/* 4. Kontaktformular */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 4. Kontaktformular
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -128,7 +128,7 @@ export default function DatenschutzPage() {
 
             {/* 5. Google Analytics */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 5. Google Analytics
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -152,7 +152,7 @@ export default function DatenschutzPage() {
 
             {/* 6. Ihre Rechte */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 6. Ihre Rechte
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -193,7 +193,7 @@ export default function DatenschutzPage() {
 
             {/* 7. SSL-Verschlüsselung */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 7. SSL-Verschlüsselung
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -213,7 +213,7 @@ export default function DatenschutzPage() {
 
             {/* 8. Widerspruchsrecht */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 8. Widerspruchsrecht
               </h2>
               <p className="text-neutral-700 leading-relaxed">

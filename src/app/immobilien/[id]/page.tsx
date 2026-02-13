@@ -137,7 +137,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                     {categoryLabels[property.category]}
                   </span>
                 </div>
-                <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900">
+                <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900">
                   {property.title}
                 </h1>
                 <div className="flex items-center gap-1.5 mt-3 text-neutral-500">
@@ -215,7 +215,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
               {/* Description */}
               <div className="mb-10">
-                <h2 className="font-serif text-xl font-semibold text-neutral-900 mb-4">
+                <h2 className="font-heading text-xl font-semibold text-neutral-900 mb-4">
                   Beschreibung
                 </h2>
                 <p className="text-neutral-600 leading-relaxed">
@@ -226,7 +226,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
               {/* Features */}
               {property.features.length > 0 && (
                 <div>
-                  <h2 className="font-serif text-xl font-semibold text-neutral-900 mb-4">
+                  <h2 className="font-heading text-xl font-semibold text-neutral-900 mb-4">
                     Ausstattung & Merkmale
                   </h2>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -250,7 +250,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             {/* Contact Sidebar */}
             <div className="lg:col-span-1">
               <div className="card p-6 lg:p-8 sticky top-8">
-                <h3 className="font-serif text-lg font-semibold text-neutral-900 mb-2">
+                <h3 className="font-heading text-lg font-semibold text-neutral-900 mb-2">
                   Interesse an dieser Immobilie?
                 </h3>
                 <p className="text-sm text-neutral-500 mb-6">

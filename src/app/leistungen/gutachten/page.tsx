@@ -112,7 +112,7 @@ export default function GutachtenPage() {
             <span>/</span>
             <span className="text-white">Gutachten &amp; Bewertung</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Gutachten &amp; Bewertung
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl leading-relaxed">
@@ -133,7 +133,7 @@ export default function GutachtenPage() {
                 <div className="w-24 h-24 mx-auto rounded-full bg-primary-50 flex items-center justify-center mb-4">
                   <Shield size={48} className="text-primary-800" />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-neutral-900 mb-2">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                   DEKRA-zertifiziert
                 </h3>
                 <p className="text-sm text-neutral-500 leading-relaxed">
@@ -171,7 +171,7 @@ export default function GutachtenPage() {
                   eignen sich f&uuml;r private und au&szlig;ergerichtliche
                   Zwecke.
                 </p>
-                <h3 className="font-serif text-lg font-semibold text-neutral-800 pt-4">
+                <h3 className="font-heading text-lg font-semibold text-neutral-800 pt-4">
                   Das Kurzgutachten beinhaltet:
                 </h3>
                 <ul className="space-y-2">
@@ -215,7 +215,7 @@ export default function GutachtenPage() {
                 <div className="w-12 h-12 rounded-xl bg-primary-50 text-primary-800 flex items-center justify-center mb-4">
                   {useCase.icon}
                 </div>
-                <h3 className="font-serif text-base font-semibold text-neutral-900 mb-2">
+                <h3 className="font-heading text-base font-semibold text-neutral-900 mb-2">
                   {useCase.title}
                 </h3>
                 <p className="text-neutral-500 text-sm leading-relaxed">
@@ -237,7 +237,7 @@ export default function GutachtenPage() {
       {/* CTA Banner */}
       <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800">
         <div className="container-custom text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Gutachten anfordern
           </h2>
           <p className="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">

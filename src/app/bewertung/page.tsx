@@ -74,7 +74,7 @@ export default function BewertungPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Kostenlose Bewertung</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Kostenlose Marktwerteinschätzung
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl">
@@ -91,7 +91,7 @@ export default function BewertungPage() {
             {/* Form */}
             <div className="lg:col-span-3">
               <div className="card p-8">
-                <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-6">
+                <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-6">
                   Immobilie beschreiben
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-5">

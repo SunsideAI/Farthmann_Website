@@ -5,10 +5,10 @@ export default function NotFound() {
   return (
     <section className="py-32">
       <div className="container-custom text-center">
-        <p className="text-8xl md:text-9xl font-bold text-primary-100 font-serif">
+        <p className="text-8xl md:text-9xl font-bold text-primary-100 font-heading">
           404
         </p>
-        <h1 className="font-serif text-3xl md:text-4xl font-bold text-neutral-900 mt-4 mb-4">
+        <h1 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 mt-4 mb-4">
           Seite nicht gefunden
         </h1>
         <p className="text-lg text-neutral-500 max-w-md mx-auto mb-8">

@@ -6,15 +6,15 @@ import CookieBanner from "@/components/CookieBanner";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import "./globals.css";
 
-const lora = localFont({
-  src: "../../public/fonts/Lora-Variable.ttf",
-  variable: "--font-lora",
+const inter = localFont({
+  src: "../../public/fonts/Inter-Variable.ttf",
+  variable: "--font-inter",
   display: "swap",
 });
 
-const openSans = localFont({
-  src: "../../public/fonts/OpenSans-Variable.ttf",
-  variable: "--font-open-sans",
+const montserrat = localFont({
+  src: "../../public/fonts/Montserrat-Variable.ttf",
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${lora.variable} ${openSans.variable} font-sans antialiased`}
+        className={`${inter.variable} ${montserrat.variable} font-sans antialiased`}
       >
         <SchemaMarkup />
         <Header />

@@ -13,6 +13,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import HeroSlider from "@/components/HeroSlider";
 import PropertyCard from "@/components/PropertyCard";
 import { services } from "@/data/services";
 import { getFeaturedProperties } from "@/data/properties";
@@ -36,44 +37,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
-            alt="Moderne Immobilie"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/70 to-primary-900/40" />
-        </div>
-
-        <div className="relative container-custom py-20">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-accent/20 text-accent-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Award size={16} />
-              DEKRA-zertifizierter Sachverständiger
-            </div>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Ihr Immobilienexperte in Ostwestfalen-Lippe
-            </h1>
-            <p className="text-lg md:text-xl text-primary-100 mt-6 leading-relaxed">
-              Seit über 30 Jahren – Makler, Gutachter, Partner. Wir begleiten Sie
-              kompetent beim Kauf, Verkauf und bei der Bewertung Ihrer Immobilie.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <Link href="/bewertung" className="btn-accent text-base px-8 py-4">
-                Kostenlose Bewertung
-                <ArrowRight size={18} className="ml-2" />
-              </Link>
-              <Link href="/immobilien" className="btn-secondary !bg-transparent !text-white !border-white hover:!bg-white hover:!text-primary-800 text-base px-8 py-4">
-                Immobilien entdecken
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Slider */}
+      <HeroSlider />
 
       {/* Stats */}
       <section className="bg-primary-800 py-8">
@@ -81,7 +46,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="text-3xl md:text-4xl font-bold text-white font-serif">
+                <p className="text-3xl md:text-4xl font-bold text-white font-heading">
                   {stat.value}
                 </p>
                 <p className="text-primary-200 mt-1">{stat.label}</p>
@@ -112,7 +77,7 @@ export default function HomePage() {
                 <div className="w-14 h-14 rounded-xl bg-primary-50 text-primary-800 flex items-center justify-center mb-5 group-hover:bg-primary-800 group-hover:text-white transition-colors">
                   {iconMap[service.icon]}
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-semibold text-neutral-900 mb-3">
                   {service.title}
                 </h3>
                 <p className="text-neutral-500 leading-relaxed text-sm">
@@ -250,7 +215,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-xl font-semibold text-neutral-900 mb-4">
+                  <h3 className="font-heading text-xl font-semibold text-neutral-900 mb-4">
                     {loc.name}
                   </h3>
                   <div className="space-y-3 text-sm text-neutral-600">
@@ -294,7 +259,7 @@ export default function HomePage() {
       {/* CTA Banner */}
       <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800">
         <div className="container-custom text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Sie möchten Ihre Immobilie verkaufen?
           </h2>
           <p className="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">

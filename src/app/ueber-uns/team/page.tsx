@@ -28,7 +28,7 @@ export default function TeamPage() {
             <span>/</span>
             <span className="text-white">Unser Team</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Unser Team
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl leading-relaxed">
@@ -61,7 +61,7 @@ export default function TeamPage() {
 
                   {/* Info */}
                   <div className="md:col-span-2 p-8">
-                    <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-1">
+                    <h2 className="font-heading text-2xl font-bold text-neutral-900 mb-1">
                       {member.name}
                     </h2>
                     <p className="text-primary-800 font-medium text-sm mb-4">
@@ -165,7 +165,7 @@ export default function TeamPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800">
         <div className="container-custom text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Kontaktieren Sie uns
           </h2>
           <p className="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">

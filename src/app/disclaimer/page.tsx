@@ -18,7 +18,7 @@ export default function DisclaimerPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Disclaimer</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Disclaimer – Haftungsausschluss
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function DisclaimerPage() {
           <div className="prose prose-neutral max-w-none space-y-10">
             {/* Haftung für Inhalte */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Haftung für Inhalte
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -62,7 +62,7 @@ export default function DisclaimerPage() {
 
             {/* Haftung für Links */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Haftung für Links
               </h2>
               <p className="text-neutral-700 leading-relaxed">
@@ -85,7 +85,7 @@ export default function DisclaimerPage() {
 
             {/* Urheberrecht */}
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-neutral-900 mb-4">
+              <h2 className="font-heading text-2xl font-semibold text-neutral-900 mb-4">
                 Urheberrecht
               </h2>
               <p className="text-neutral-700 leading-relaxed">

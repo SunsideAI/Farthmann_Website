@@ -28,7 +28,7 @@ export default function StandortePage() {
             <span>/</span>
             <span className="text-white">Unsere Standorte</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Unsere Standorte
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl leading-relaxed">
@@ -58,7 +58,7 @@ export default function StandortePage() {
 
                   {/* Info */}
                   <div className="p-8 lg:p-10">
-                    <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-6">
+                    <h2 className="font-heading text-2xl font-bold text-neutral-900 mb-6">
                       {location.name}
                     </h2>
 
@@ -177,7 +177,7 @@ export default function StandortePage() {
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl font-semibold text-neutral-900 mb-2">
+                  <h3 className="font-heading text-xl font-semibold text-neutral-900 mb-2">
                     Schaufenster Borgholzhausen
                   </h3>
                   <p className="text-neutral-600 leading-relaxed mb-3">

@@ -29,7 +29,7 @@ export default function ImmobilienPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Immobilien</span>
           </nav>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Immobilien Angebote
           </h1>
           <p className="text-lg text-primary-200 mt-4 max-w-2xl">
@@ -134,7 +134,7 @@ export default function ImmobilienPage() {
               <div className="w-20 h-20 mx-auto bg-neutral-100 rounded-full flex items-center justify-center mb-6">
                 <Search size={32} className="text-neutral-400" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-neutral-800 mb-2">
+              <h3 className="font-heading text-xl font-semibold text-neutral-800 mb-2">
                 Keine Immobilien gefunden
               </h3>
               <p className="text-neutral-500 max-w-md mx-auto">
@@ -159,7 +159,7 @@ export default function ImmobilienPage() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-primary-900 to-primary-800">
         <div className="container-custom text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Ihre Wunschimmobilie nicht gefunden?
           </h2>
           <p className="text-lg text-primary-200 mb-8 max-w-2xl mx-auto">
