@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50">
+  <rect x="0" y="5" width="40" height="40" rx="4" fill="#221D80"/>
+  <text x="20" y="33" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="white">F</text>
+  <text x="52" y="25" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#221D80" letter-spacing="2">FARTHMANN</text>
+  <text x="52" y="42" font-family="Arial, sans-serif" font-size="10" fill="#E37D22" letter-spacing="3">IMMOBILIEN</text>
+</svg>
